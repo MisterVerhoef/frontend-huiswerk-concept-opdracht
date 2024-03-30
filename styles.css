@@ -30,14 +30,18 @@ html {
 /* ------------------------------- 2. Typography ----------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Merriweather;
+    font-family: 'Merriweather', sans-serif;
 }
 
-* {
-    font-family: Roboto;
+body {
+    font-family: 'Roboto', sans-serif;
 
 }
 
+button {
+    font-family: inherit;
+    border: none;
+}
 
 /*Paars #5722CD;*/
 /*Blauw #4845E4;*/
@@ -50,11 +54,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
+
+
+/* --------------- 3.1 Reusables ----------------------- */
 .outer-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
     border: red dashed;
     width: 100%;
 
@@ -67,6 +73,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     text-align: center;
     flex-grow: 0;
+    flex-basis: 1200px;
+    margin: 0 20px;
 
 
 }
@@ -74,11 +82,10 @@ h1, h2, h3, h4, h5, h6 {
 span {
     width: 100%
 }
-
-/* --------------- 3.1 Reusables ----------------------- */
-
 /* --------------- 3.2 Other --------------------------- */
-
+button:hover{
+    cursor: pointer;
+}
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
@@ -100,25 +107,25 @@ header  button {
 /* --------------- 4.2 Introduction ------------------- */
 
 /* --------------- 4.3 Work ------------------------- */
-.work article {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 500px;
-}
+/*.work article {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex-basis: 500px;*/
+/*}*/
 
-.work div {
-    display: flex;
-    border: greenyellow dotted;
-    flex-direction: column;
-    align-items: center;
-;
-}
+/*.work div {*/
+/*    display: flex;*/
+/*    border: greenyellow dotted;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*;*/
+/*}*/
 /* --------------- 4.4 Services ------------------------- */
-.services article {
+div article {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: blue dotted;
-    flex-basis: 800px ;
+
 
 
 }
